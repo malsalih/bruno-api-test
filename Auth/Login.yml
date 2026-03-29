@@ -1,0 +1,28 @@
+info:
+  name: Login
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/register?name=mohammed3&email=user3@example.com&password=password&role=user"
+  params:
+    - name: name
+      value: mohammed3
+      type: query
+    - name: email
+      value: user3@example.com
+      type: query
+    - name: password
+      value: password
+      type: query
+    - name: role
+      value: user
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

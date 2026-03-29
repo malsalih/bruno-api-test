@@ -1,0 +1,31 @@
+info:
+  name: Working hours
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/provider/working-hours"
+  body:
+    type: json
+    data: |-
+      {
+        "working_hours": [
+          {"day_of_week": 0, "start_time": "09:00", "end_time": "17:00", "is_closed": false},
+              {"day_of_week": 1, "start_time": "09:00", "end_time": "17:00", "is_closed": false},
+              {"day_of_week": 2, "start_time": "09:00", "end_time": "17:00", "is_closed": false},
+              {"day_of_week": 3, "start_time": "09:00", "end_time": "17:00", "is_closed": false},
+              {"day_of_week": 4, "start_time": "09:00", "end_time": "17:00", "is_closed": false},
+          {"day_of_week": 5, "start_time": null, "end_time": null, "is_closed": true},
+              {"day_of_week": 6, "start_time": "09:00", "end_time": "17:00", "is_closed": false}
+      ]
+      }
+  auth:
+    type: bearer
+    token: n2KkRLOVm0Xm6a5SqS2ag60jR03d2nIx7cfHSnJg1758c93d
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
