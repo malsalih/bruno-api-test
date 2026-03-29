@@ -5,19 +5,19 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/register?name=mohammed&email=user@example.com&password=password&role=user"
+  url: "{{url}}/register?name=mohammed&email=user1@example.com&password=password&role=provider"
   params:
     - name: name
       value: mohammed
       type: query
     - name: email
-      value: user@example.com
+      value: user1@example.com
       type: query
     - name: password
       value: password
       type: query
     - name: role
-      value: user
+      value: provider
       type: query
   auth: inherit
 

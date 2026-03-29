@@ -5,8 +5,20 @@ info:
 
 http:
   method: POST
-  url: ""
-  auth: inherit
+  url: "{{url}}/provider/setup-profile?service_type=doctor&name=doctor&specific_detail=nothing"
+  params:
+    - name: service_type
+      value: doctor
+      type: query
+    - name: name
+      value: doctor
+      type: query
+    - name: specific_detail
+      value: nothing
+      type: query
+  auth:
+    type: bearer
+    token: gbjrE6fNbGAeBaC2yBf8ry95iH0q0NLvim5BU9Xe5dbce58b
 
 settings:
   encodeUrl: true
