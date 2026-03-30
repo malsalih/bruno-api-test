@@ -1,0 +1,30 @@
+info:
+  name: store
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/appointment/create?provider_type=doctor&provider_id=1&start_time=2026-03-30 21:15&end_time=2026-03-30 21:20"
+  params:
+    - name: provider_type
+      value: doctor
+      type: query
+    - name: provider_id
+      value: "1"
+      type: query
+    - name: start_time
+      value: 2026-03-30 21:15
+      type: query
+    - name: end_time
+      value: 2026-03-30 21:20
+      type: query
+  auth:
+    type: bearer
+    token: RsnQDyCNEzltftjRjFHZAZJ5Cp0lSKVjeakF8rEG0d3f5b89
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

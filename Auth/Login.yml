@@ -5,10 +5,10 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/login?email=ahmed@example.com&password=password"
+  url: "{{url}}/login?email=test@example.com&password=password"
   params:
     - name: email
-      value: ahmed@example.com
+      value: test@example.com
       type: query
     - name: password
       value: password
